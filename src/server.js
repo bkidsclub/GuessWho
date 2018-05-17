@@ -1,14 +1,18 @@
-var express = require('express');
-var app = express();
-var bodyparser = require('body-parser');
+process.title = "Guess Who";
+
+const port = 8000;
+var webSocketServer = require('websocket').server;
 var http = require('http');
-const port = 80
-var ws = require('websocket');
-
-
-app.get('/', function (req, res) 
-{
-    res.sendFile('./public/index.html');
+var server = http.createServer(function (req, res)
+{   
 });
+server.listen(port, () => 
+{console.log((new Date()) + " server is listening on port " + port);});
 
-http.createServer(app).listen(port, console.log(`Server running on port ${port}`));
+var wsServer = new webSocketServer({httpServer: server});
+
+wsServer.on('request', (req) => 
+{
+    console.log((new Date()) + ' Connection from origin ' + req.origin + '.');
+    var connection = req.accept(null, req.origin);
+});

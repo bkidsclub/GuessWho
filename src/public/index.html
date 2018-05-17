@@ -4,24 +4,53 @@
         <meta charset="utf-8">
         <meta title="Guess Who!">
         <link href="./css/indexsty.css" rel="stylesheet" type="text/css">
+        <script src="js/startup.js"></script>
     </head>
     <body>
         <div id="wrapper">
-            <div id="characters">
+            <div id="characters" onload="renderInactive(this)">
                 <table>
                     <table>
-                    <div>
-                    <button onclick="processClick(0)"><img src="./assets/Alex.jpg"><p>Alex</p></button>
-                    <button onclick="processClick(1)"><img src="./assets/Alfred.jpg"><p>Alfred</p></button>
-                    <button onclick="processClick(2)"><img src="./assets/Anita.jpg"><p>Anita</p></button>
-                    <button onclick="processClick(3)"><img src="./assets/Anne.jpg"><p>Anne</p></button>
-                    <button onclick="processClick(4)"><img src="./assets/Bernard.jpg"><p>Bernard</p></button>
-                    </div>
-                </table>
+                        <div>
+                            <button onclick="processClick(0, connection)"><img src="./assets/Alex.jpg"><p>Alex</p></button>
+                            <button onclick="processClick(1, connection)"><img src="./assets/Alfred.jpg"><p>Alfred</p></button>
+                            <button onclick="processClick(2, connection)"><img src="./assets/Anita.jpg"><p>Anita</p></button>
+                            <button onclick="processClick(3, connection)"><img src="./assets/Anne.jpg"><p>Anne</p></button>
+                            <button onclick="processClick(4, connection)"><img src="./assets/Bernard.jpg"><p>Bernard</p></button>
+                            <button onclick="processClick(5, connection)"><img src="./assets/Bill.jpg"><p>Bill</p></button>
+                            <button onclick="processClick(6, connection)"><img src="./assets/Charles.jpg"><p>Charles</p></button>
+                            <button onclick="processClick(7, connection)"><img src="./assets/Claire.jpg"><p>Claire</p></button>
+                            <button onclick="processClick(8, connection)"><img src="./assets/David.jpg"><p>David</p></button>
+                            <button onclick="processClick(9, connection)"><img src="./assets/Eric.jpg"><p>Eric</p></button>
+                            <button onclick="processClick(10, connection)"><img src="./assets/Frans.jpg"><p>Frans</p></button>
+                            <button onclick="processClick(11, connection)"><img src="./assets/George.jpg"><p>George</p></button>
+                            <button onclick="processClick(12, connection)"><img src="./assets/Herman.jpg"><p>Herman</p></button>
+                            <button onclick="processClick(13, connection)"><img src="./assets/Joe.jpg"><p>Joe</p></button>
+                            <button onclick="processClick(14, connection)"><img src="./assets/Maria.jpg"><p>Maria</p></button>
+                        </div>
+                    </table>
+                    <table>
+                        <div>
+                            <button onclick="processClick(15, connection)"><img src="./assets/Max.jpg"><p>Max</p></button>
+                            <button onclick="processClick(16, connection)"><img src="./assets/Paul.jpg"><p>Paul</p></button>
+                            <button onclick="processClick(17, connection)"><img src="./assets/Peter.jpg"><p>Peter</p></button>
+                            <button onclick="processClick(18, connection)"><img src="./assets/Philip.jpg"><p>Philip</p></button>
+                            <button onclick="processClick(19, connection)"><img src="./assets/Richard.jpg"><p>Richard</p></button>
+                            <button onclick="processClick(20, connection)"><img src="./assets/Robert.jpg"><p>Robert</p></button>
+                            <button onclick="processClick(21, connection)"><img src="./assets/Sam.jpg"><p>Sam</p></button>
+                            <button onclick="processClick(22, connection)"><img src="./assets/Susan.jpg"><p>Susan</p></button>
+                            <button onclick="processClick(23, connection)"><img src="./assets/Tom.jpg"><p>Tom</p></button>
+                        </div>
+                    </table>
                 </table>
             </div>
         </div>
-        <script src="js/startup.js"></script>
+        <script>
+        function renderInactive (thing) 
+        {
+            thing.style.display = none;
+        }
+        </script>
         <script src="js/playchar.js"></script>
         <script src="js/process.js"></script>
     </body>

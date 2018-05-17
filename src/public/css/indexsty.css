@@ -3,9 +3,9 @@ body {
     padding: 8px;
     padding-bottom: 10px;
     border: 4px;
-}
-#wrapper {
-    background-color: #EEEEEE;
+    margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
 }
 div:not(#wrapper):not(#characters) {
     display: inline-block;
