@@ -7,6 +7,6 @@ body {
     margin-right:auto;
     text-align: center;
 }
-div:not(#wrapper):not(#characters) {
-    display: inline-block;
+#Inactive {
+    display: none;
 }

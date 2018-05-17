@@ -8,7 +8,9 @@
     </head>
     <body>
         <div id="wrapper">
-            <div id="characters" onload="renderInactive(this)">
+            <h3>Guess Who!</h3>
+            <div id="RenderInActiveAfterRes">
+                <p id="renderActive">Who do you pick as your character?</p>
                 <table>
                     <table>
                         <div>
@@ -44,13 +46,44 @@
                     </table>
                 </table>
             </div>
+            <div id="Inactive">
+                <table>
+                    <table>
+                        <div>
+                            <button onclick="guessClick(0, connection)"><img src="./assets/Alex.jpg"><p>Alex</p></button>
+                            <button onclick="guessClick(1, connection)"><img src="./assets/Alfred.jpg"><p>Alfred</p></button>
+                            <button onclick="guessClick(2, connection)"><img src="./assets/Anita.jpg"><p>Anita</p></button>
+                            <button onclick="guessClick(3, connection)"><img src="./assets/Anne.jpg"><p>Anne</p></button>
+                            <button onclick="guessClick(4, connection)"><img src="./assets/Bernard.jpg"><p>Bernard</p></button>
+                            <button onclick="guessClick(5, connection)"><img src="./assets/Bill.jpg"><p>Bill</p></button>
+                            <button onclick="guessClick(6, connection)"><img src="./assets/Charles.jpg"><p>Charles</p></button>
+                            <button onclick="guessClick(7, connection)"><img src="./assets/Claire.jpg"><p>Claire</p></button>
+                            <button onclick="guessClick(8, connection)"><img src="./assets/David.jpg"><p>David</p></button>
+                            <button onclick="guessClick(9, connection)"><img src="./assets/Eric.jpg"><p>Eric</p></button>
+                            <button onclick="guessClick(10, connection)"><img src="./assets/Frans.jpg"><p>Frans</p></button>
+                            <button onclick="guessClick(11, connection)"><img src="./assets/George.jpg"><p>George</p></button>
+                            <button onclick="guessClick(12, connection)"><img src="./assets/Herman.jpg"><p>Herman</p></button>
+                            <button onclick="guessClick(13, connection)"><img src="./assets/Joe.jpg"><p>Joe</p></button>
+                            <button onclick="guessClick(14, connection)"><img src="./assets/Maria.jpg"><p>Maria</p></button>
+                        </div>
+                    </table>
+                    <table>
+                        <div>
+                            <button onclick="guessClick(15, connection)"><img src="./assets/Max.jpg"><p>Max</p></button>
+                            <button onclick="guessClick(16, connection)"><img src="./assets/Paul.jpg"><p>Paul</p></button>
+                            <button onclick="guessClick(17, connection)"><img src="./assets/Peter.jpg"><p>Peter</p></button>
+                            <button onclick="guessClick(18, connection)"><img src="./assets/Philip.jpg"><p>Philip</p></button>
+                            <button onclick="guessClick(19, connection)"><img src="./assets/Richard.jpg"><p>Richard</p></button>
+                            <button onclick="guessClick(20, connection)"><img src="./assets/Robert.jpg"><p>Robert</p></button>
+                            <button onclick="guessClick(21, connection)"><img src="./assets/Sam.jpg"><p>Sam</p></button>
+                            <button onclick="guessClick(22, connection)"><img src="./assets/Susan.jpg"><p>Susan</p></button>
+                            <button onclick="guessClick(23, connection)"><img src="./assets/Tom.jpg"><p>Tom</p></button>
+                        </div>
+                    </table>
+                </table>
+            </div>
+            </div>
         </div>
-        <script>
-        function renderInactive (thing) 
-        {
-            thing.style.display = none;
-        }
-        </script>
         <script src="js/playchar.js"></script>
         <script src="js/process.js"></script>
     </body>
